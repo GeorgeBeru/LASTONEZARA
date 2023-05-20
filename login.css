@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+
+.content {
+   color: #fff;
+   width: 100%;
+   height: 100%;
+}
+
+
+
+.zara-logo {
+margin-left: 200px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar {
+   box-sizing: border-box;
+   width: 320px;
+}
+
+.navbar {
+
+  box-sizing: border-box;
+  width: 320px;
+}
+
+.navbar .menu-items {
+ display: flex;
+ border: 2px solid white;
+ background-color: white;
+ text-align: left;
+
+}
+
+.navbar .nav-container li {
+ list-style: none;
+}
+
+.navbar .nav-container a {
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 1rem;
+ padding: 0.7rem;
+ color: black;
+}
+
+.nav-container {
+ display: block;
+}
+
+.nav-container .checkbox {
+ position: absolute;
+ display: block;
+ height: 32px;
+ width: 32px;
+ top: 20px;
+ left: 20px;
+ z-index: 5;
+ opacity: 0;
+ cursor: pointer;
+ 
+}
+
+.nav-container .hamburger-lines {
+ display: block;
+ height: 26px;
+ width: 32px;
+ position: absolute;
+ top: 17px;
+ left: 20px;
+ z-index: 2;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ 
+}
+
+.nav-container .hamburger-lines .line {
+ display: block;
+ height: 4px;
+ width: 100%;
+ border-radius: 10px;
+ background: #4e4e4e;
+}
+
+.nav-container .hamburger-lines .line1 {
+ transform-origin: 0% 0%;
+ transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+ transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+ transform-origin: 0% 100%;
+ transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+ padding-top: 120px;
+ height: 100vh;
+ width: 100%;
+ transform: translate(-150%);
+ display: flex;
+ flex-direction: column;
+ margin-left: -20px;
+ padding-left: 50px;
+}
+
+.navbar .menu-items li {
+ margin-bottom: 1.2rem;
+ font-size: 1.5rem;
+ font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+ transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+ transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+ transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+ transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+ display: none;
+} 
+
+.woman-man-child {
+position: absolute;
+top: 60px;
+display: inline-flex;
+}
+
+.first {
+border-bottom: 1px solid black;
+line-height: 21px;
+}
+
+
+
+.nav-content {
+   position: relative;
+   top: -50px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.info {
+  display: flex;
+}
+
+.info a {
+  position: relative;
+  left: 22px;
+  font-size: 15px;
+  margin: 15px;
+  text-decoration: none;
+  color: rgb(153 153 153 / 100%);
+}
+
+
+
+#main {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 120px;
+  padding-top: 50px;
+}
+
+.form-container input{
+border: none;
+margin-top: 25px;
+border-bottom: 1px solid black;
+font-size: 20px;
+width: 100%;
+}
+
+
+
+.register .register-button{
+  background-color: white;
+  width: 120%;
+  height: 50px;
+  border: 0.5px solid black;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
+.form-button .log-in-button:hover {
+  background-color: rgb(73, 73, 73);;
+}
+
+.register .register-button:hover {
+border: 0.5px solid rgb(124, 124, 124);
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.forget-password {
+margin-top: 30px;
+}
+
+
+.form-button .log-in-button {
+  margin-top: 80px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+.forget-password a {
+text-decoration: none;
+color: rgb(97, 97, 97);
+font-size: 14px;
+}
+
+#email-field {
+display: block;
+width: 100%;
+border: 0;
+border-bottom: 2px solid #dcdcdc;
+background: transparent;
+outline: none;
+font-size: 26px;
+padding: 5px 2px;
+position: relative;
+font-size: 15px;
+}
+
+#email-label {
+bottom: 5px;
+left: 2px;
+color: #6e6e6e;
+columns: #777;
+font-size: 18px;
+transition: bottom 0.3s;
+font-size: 15px;
+}
+
+#email-error {
+font-size: 12px;
+font-weight: 400;
+color: rgb(214, 75, 75);
+}
+
+#password-field {
+display: block;
+border: 0;
+border-bottom: 2px solid #dcdcdc;
+background: transparent;
+outline: none;
+font-size: 26px;
+padding: 5px 2px;
+position: relative;
+font-size: 12px;
+margin-top: 30px;
+}
+
+
+#password-label {
+left: 2px;
+color: #6e6e6e;
+columns: #777;
+font-size: 18px;
+transition: bottom 0.3s;
+font-size: 15px;
+}
+
+
+#password-error {
+font-size: 13px;
+font-weight: 400px;
+color: rgb(214, 75, 75);
+width: 400px;
+}
+
+
+@media (max-width: 925px) {
+
+  .navbar .menu-items {
+    transition: 0.5s;
+    width: 290%;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .help {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+  
+  #main {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .register {
+    margin-top: 50px;
+    width: 83%;
+  }
+
+  .log-in-title {
+    font-size: 16px;
+  }
+
+  .need-account {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+
+  .navbar .menu-items {
+    transition: 0.5s;
+    width: 290%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .help {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+  
+  #main {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .register {
+    margin-top: 50px;
+  }
+
+}
+
+
+@media (max-width:430px) {
+  .log-in-title {
+    font-size: 14px;
+  }
+
+  .need-account {
+    font-size: 14px;
+  }
+}
+
+
+
+/*
+@media  (max-width: 1231px) {
+
+  .zara-logo a img{
+    width: 240px;
+    
+  }
+
+  .info a {
+    font-size: 14px;
+  }
+  
+  .footer-layout {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:400px ) {
+  .footer-layout * {
+    font-size: 13px;
+  }
+
+
+
+  .summer-coll span#b {
+    width: 100%;
+    height: 100%;
+  }
+
+  .zara-logo {
+    display: none;
+  }
+} */

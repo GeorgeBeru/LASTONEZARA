@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow our Newsletter | ZARA Georgia</title>
+    <link rel="stylesheet" href="newsletter.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="principal">
+                <nav>
+                    <div class="navbar">
+                        <div class="container nav-container">
+                            <input class="checkbox" type="checkbox" name="" id="" />
+                            <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                                <span class="line line2"></span>
+                                <span class="line line3"></span>
+                              </div>  
+                            <div class="menu-items">
+                                <div class="woman-man-child">
+                                    <li><a class="first" href="">WOMAN</a></li>
+                                    <li><a class="second" href="">MAN</a></li>
+                                    <li><a class="#" href="index.html">MAIN</a></li>
+                                </div>
+                              <li><a href="#">NEW</a></li>
+                              <li><a href="#">DRESS TIME</a></li>
+                              <li><a href="#">JACKETS | TRENCH COATS</a></li>
+                              <li><a href="#">BLAZERS</a></li>
+                              <li><a href="#">WAISTCOATS | GILETS</a></li>
+                              <li><a href="#">DRESSES | JUMPSUITS</a></li>
+                              <li><a href="#">TOPS | BODYSUITS</a></li>
+                              <li><a href="#">SHIRTS</a></li>
+                              <li><a href="#">T-SHIRTS | SWEATSHIRTS</a></li>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="nav-content">
+                            <div class="zara-logo">
+                                <a href="index.html"><img src="Images/Zara.png" alt="" width="250px"></a>
+                            </div>
+                            
+                            <div class="search">
+                                <div class="search-button">
+                                </div>
+                            </div>
+                        <div class="info">
+                            <div class="log-in">
+                                <a href="login.html"><span>LOG IN</span></a>
+                            </div>
+            
+                            <div class="help">
+                                <a href=""><span>HELP</span></a>
+                            </div>
+                            
+                            <div class="cart">
+                                <a href=""><img src="Images/cart.png" alt="" width="20px"></a>
+                            </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="newsletterr">
+            <div class="newsletter">
+                <div class="content-info"></div>
+                <h3>NEWSLETTER</h3>
+                <br>
+                <p>Select your interests and receive the latest news and trends each week.</p>
+            </div>
+
+            <div class="hero">
+
+                <div class="input-group">
+                    <label id="email-label">E-MAIL</label>
+                    <input type="email" spellcheck="false" id="email-field" onkeyup="validateEmail()">
+                    <span id="email-error"></span>
+                </div> 
+            </div>
+
+            <div class="privacy">
+            </div>
+
+            <input type="checkbox" class="checkbox1" id="privacy" value="Bike">
+            <label for="vehicle1" class="privacy">I have read and understand the <a href="https://static.zara.net/static/pdfs/GE/privacy-policy/privacy-policy-en_GE-20221018.pdf" class="label-text" target="_blank">Privacy and Cookies Policy</a> and agree to receive personalised commercial communications <br> <span class="zara-text">from <b>ZARA</b> by email</span></label><br>
+
+            <div class="sections">
+
+                <h3>SECTION</h3>
+
+                <div class="checkboxes">
+                    <input type="checkbox" class="checkbox" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Woman</label><br>
+                    
+                    <input type="checkbox" class="checkbox2" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Man</label><br>
+                    
+                    <input type="checkbox" class="checkbox3" name="vehicle1" value="Bike">
+                    <label for="vehicle1">Kid</label><br>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <a href="#"><button class="save">SAVE</button></a>
+            </div>
+
+            <a href="#"><button class="unsubscribe">UNSUBSCRIBE</button></a>
+        </div>
+    </main>
+</div>
+<script>
+    let emailField = document.getElementById("email-field");
+    let emailLabel = document.getElementById("email-label");
+    let emailError = document.getElementById("email-error");
+
+    function validateEmail (){
+    emailLabel.style.bottom ="35px";
+
+    if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+        emailError.innerHTML = "Please enter a valid email";
+        return false; 
+    }
+
+    emailError.innerHTML = "";
+    return true;
+
+}
+</script>
+</body>
+</html>

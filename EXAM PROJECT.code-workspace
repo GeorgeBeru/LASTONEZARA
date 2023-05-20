@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../EXAM-PROJECT-2/EXAM-PROJECT (1)/EXAM-PROJECT/EXAM PROJECT"
+		},
+		{
+			"path": "../../../EXAM-PROJECT-1/scroll"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "EXAM-PROJECT"
+	}
+}

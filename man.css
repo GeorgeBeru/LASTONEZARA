@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+.load {
+   animation: slide 2s;
+}
+
+
+.zara-logo {
+ margin-left: 200px;
+}
+
+.slider {
+ width: 100%;
+ height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ animation: slide 15s infinite;
+}
+
+.content {
+   color: #fff;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   text-align: center;
+}
+
+@keyframes slide {
+   0% {
+       background-image: url(Images/BACK11.jpg);
+       
+   } 
+   
+   20% {
+       background-image: url(Images/BACK22.jpg);
+   }  
+   
+   20.01% {
+       background-image: url(Images/BACK33.jpg);
+   } 
+   
+   40% {
+       background-image: url(Images/BACK11.jpg);
+   } 
+   
+   
+   60.01% {
+       background-image: url(Images/BACK22.jpg);
+   }  
+   
+   80% {
+       background-image: url(Images/BACK33.jpg);
+   }
+   
+   80.01% {
+       background-image: url(Images/BACK11.jpg);
+   } 
+   
+   100% {
+       background-image: url(Images/BACK33.jpg);
+   }
+}
+
+
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  
+}
+
+.navbar {
+   box-sizing: border-box;
+   width: 320px;
+}
+
+.navbar .menu-items {
+  display: flex;
+  border: 2px solid white;
+  background-color: white;
+  text-align: left;
+  
+ 
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.7rem;
+  color: black;
+  
+}
+
+.nav-container {
+  display: block;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #4e4e4e;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  height: 100vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -20px;
+  padding-left: 50px;
+  border-left: 1px solid black;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+} 
+
+.woman-man-child {
+ display: inline-flex;
+ margin: 10px;
+}
+
+.second {
+ border-bottom: 1px solid black;
+ line-height: 21px;
+}
+
+
+.nav-content {
+   position: relative;
+   top: -50px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.info {
+   display: inline-flex;
+   justify-content: center;
+}
+
+.info a {
+   font-size: 15px;
+   margin: 15px;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+}
+
+
+
+
+.footer {
+   position: absolute;
+   text-align: center;   
+   height: 400px;
+   width: 100%;
+}
+
+.footer h2 {
+   color: rgb(61, 61, 61);
+   font-size: 1.5vh;
+   margin: 120px;
+}
+
+
+.newsLetter a{
+ text-decoration: none;
+ color: rgb(61, 61, 61);
+}
+
+.social-network {
+   width: 100%;
+}
+
+.social-network ul li {
+   display: inline-block;
+}
+
+.social-network ul li  a{
+   text-decoration: none;
+   font-size: 1.2vh;
+   margin: 15px;
+   color: rgb(61, 61, 61);
+}
+
+
+.socialTerms {
+   display: flex;
+   justify-content: center;
+   list-style: none;
+   font-size: 13px;
+}
+
+.socialTerms li {
+   padding: 20px;
+}
+
+.socialTerms li a{
+   position: relative;
+   top: 50px;
+   text-decoration: none;
+   color: rgb(153 153 153 / 100%);
+}
+
+
+@media  (max-width: 1231px) {
+
+ .zara-logo a img{
+   width: 240px;
+   
+ }
+
+ .info a {
+   font-size: 14px;
+ }
+ 
+
+ .slider {
+   width: 100%;
+ }
+
+ .slider {
+   background-image: url(Images/BACK1.jpg);
+   background-image: url(Images/BACK2.jpg);
+   background-image: url(Images/BACK4.jpg);
+   background-image: url(Images/BACK5.jpg);
+ }
+
+ .footer {
+   width: 100%;
+ }
+
+ .footer ul li  a{
+   font-size: 1vh;
+ }
+
+ .footer .newsLetter a {
+   width: 100%;
+ }
+}
+
+
+
+
+@media (max-width: 925px) {
+
+ .zara-logo a img{
+   width: 200px;
+   
+ }
+
+ .navbar .menu-items {
+   transition: 0.5s;
+   width: 290%;
+ }
+
+
+ .navbar{
+   color: red;
+ }
+
+
+ .slider {
+   width: 100%;
+ }
+ .slider {
+   background-image: url(Images/BACK1.jpg);
+   background-image: url(Images/BACK2.jpg);
+   background-image: url(Images/BACK4.jpg);
+   background-image: url(Images/BACK5.jpg);
+ }
+
+ .social-network {
+   width: 100%;
+ }
+
+ .footer ul li  a{
+   font-size: 1vh;
+   margin: 15px;
+ }
+
+ .footer {
+   width: 100%;
+ }
+
+ .footer .newsLetter a {
+   width: 100%;
+ }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+ .zara-logo a img{
+   width: 0;
+   
+ }
+
+ .navbar .menu-items {
+   transition: 0.5s;
+   width: 290%;
+ }
+
+ .container {
+   width: 90%;
+ }
+
+ .slider {
+   width: 100%;
+ }
+
+ .slider {
+   background-image: url(Images/BACK1.jpg);
+   background-image: url(Images/BACK2.jpg);
+   background-image: url(Images/BACK4.jpg);
+   background-image: url(Images/BACK5.jpg);
+ }
+
+ .footer ul li  a{
+   font-size: 1vh;
+   margin: 15px;
+ }
+
+ .footer {
+   width: 100%;
+ }
+
+ .footer .newsLetter a {
+   width: 100%;
+ }
+}
+
+
+
+
+@media (max-width: 320px) {
+
+
+ .navbar .menu-items {
+   transition: 0.5s;
+   width: 290%;
+ }
+
+ .container {
+   width: 90%;
+ }
+
+ .info a {
+   width: 100%;
+   height: 100%;
+ }
+
+ .slider {
+   background-image: url(Images/BACK1.jpg);
+   background-image: url(Images/BACK2.jpg);
+   background-image: url(Images/BACK4.jpg);
+   background-image: url(Images/BACK5.jpg);
+ }
+
+ .footer ul li  a{
+   font-size: 1vh;
+   margin: 15px;
+ }
+
+ .footer {
+   width: 100%;
+ }
+
+ .footer .newsLetter a {
+   width: 100%;
+ }
+}
+
+
